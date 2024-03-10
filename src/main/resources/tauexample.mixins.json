@@ -4,6 +4,7 @@
   "package": "net.taureon.tauexample.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ItemStackMixin"
   ],
   "client": [
     "ExampleMixin"
