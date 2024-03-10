@@ -10,6 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class ItemStackMixin {
     @Inject(method = "getRepairCost()I", at = @At("RETURN"), cancellable = true)
     public void getRepairCost(CallbackInfoReturnable<Integer> cir) {
+        //keeps combine costs reasonable
         cir.setReturnValue(0);
     }
 }
